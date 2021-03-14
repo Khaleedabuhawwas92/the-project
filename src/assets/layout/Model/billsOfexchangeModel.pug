@@ -1,0 +1,51 @@
+#exampleModal.modal.fade(
+    tabindex="-1",
+    role="dialog",
+    aria-labelledby="exampleModalLabel",
+    aria-hidden="true"
+)
+    .modal-dialog.modal-xl(role="document")
+        .modal-content
+            .modal-header
+                h5#exampleModalLabel.modal-title.text-center.font-weight-bold.lead شاشة الادخال 
+            .modal-body
+                form.row.g-4
+                    .col-md-6
+                        label.form-label.font-weight-bold(for='inputPassword4')  الرقم
+                        input#text.form-control(type='text')
+                    .col-md-6
+                        label.form-label.datepicker.font-weight-bold(for='inputdate4'  ) التاريخ
+                        input.form-control(type='date' readonly )
+                    .col-md-12
+                        label.form-label.font-weight-bold(for='inputZip')  الملاحظات
+                        textarea.form-control(name="" cols="30" rows="2")
+            .modal-header
+                h5#exampleModalLabel.modal-title.font-weight-bold.lead  اسماء السائقون 
+            .modal-body
+                form#driver-info.row.g-4
+                    .col-md-3
+                        label.form-label.font-weight-bold(for='inputPassword4') اسم السائق
+                        input#inputPassword45.form-control(type='password')
+                    .col-md-2
+                        label.form-label.datepicker.font-weight-bold(for='inputdate4' ) القيمة 
+                        input.form-control(type='text' )
+                    .col-md-2
+                        label.form-label.font-weight-bold(for='inputAddress') اسم البنك 
+                        input.form-control(type='text' )
+                    .col-md-2
+                        label.form-label.font-weight-bold(for='inputAddress') اسم البنك 
+                        input.form-control(type='text' )
+                    .col-md-2
+                        .dropdown
+                            button#dropdownMenuButton.btn.btn-secondary.dropdown-toggle(type='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+                                | Dropdown button
+                            .dropdown-menu(aria-labelledby='dropdownMenuButton')
+                                a.dropdown-item(href='#') Action
+                                a.dropdown-item(href='#') Another action
+                                a.dropdown-item(href='#') Something else here
+            .modal-footer
+                button.btn.btn-danger(
+                    type="button",
+                    data-dismiss="modal"
+                ) اغلاق
+                button.btn.btn-info(type="button") حفظ 

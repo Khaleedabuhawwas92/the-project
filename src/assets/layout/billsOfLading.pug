@@ -1,0 +1,151 @@
+
+.container
+    .card.card-primary
+        .card-header
+            h3.card-title  البوليصة
+        .card-body
+            .row
+                .col-3
+                    .form-group
+                        label(for='inputName')  الرقم
+                        input#inputName.form-control(type='text' readonly)
+                .col-6        
+                    .form-group
+                        label(for='inputDescription') التاريخ
+                        input#inputClientDate.form-control(type='text' )
+                .col-3         
+                    .form-group
+                        label(for='inputDescription') السنة
+                        input#inputDateCompany.form-control(type='text' readonly)
+            .row
+                .col-4
+                    .form-group
+                        label(for='inputName')  رقم الهاتف
+                        input#inputName.form-control(type='text')
+                    .form-group
+                        label(for='inputDescription') رقم الهاتف
+                        input#inputClientCompany.form-control(type='text')
+                    .form-group
+                        label(for='inputName')  رقم المنافيست  
+                        input#inputName.form-control(type='text')
+
+                .col-4
+                    .form-group
+                        label(for='inputName')  عنوانه
+                        input#inputName.form-control(type='text')
+                    .form-group
+                        label(for='inputName')  عنوانه 
+                        input#inputName.form-control(type='text')
+                    .form-group
+                        label(for='inputName')   مكان دفع الاجرة 
+                        select.form-control
+                            option اجور مدفوعة  
+                            option  اجور غير مدفوعة
+                .col-4
+                    .form-group
+                        label(for='inputName')  المرسل
+                        input#inputName.form-control(type='text')
+                    .form-group
+                        label(for='inputName')  المرسل اليه
+                        input#inputName.form-control(type='text')
+                    .form-group
+                        label(for='inputName')  جمرك مصر 
+                        select.form-control
+                            option يوم لكل يوم من تاريخ الوصول 
+                            option  يوم من غير يوم الوصول
+            .row
+                .col-6
+                    .form-group
+                        label(for='inputName')  رقم الفاتورة
+                        input#inputName.form-control(type='text')
+                .col-6
+                    .form-group
+                        label(for='inputName')    نوع فاتورة المرسل  
+                        select.form-control
+                            option فاتورة رقم   
+                            option  اجور غير مدفوعة
+            .row
+                .col-6
+                    .form-group
+                        label(for='inputName')  تاريخ البيان 
+                        input#inputDate.form-control(type='text')
+                .col-6
+                    .form-group
+                        label(for='inputName')   منفذ الخروج    
+                        select.form-control
+                            option  العمري   
+                            option   الحديثة 
+            .row
+                .col
+                    .form-group
+                        label(for='inputName')   تدفع من قبل     
+                        select.form-control
+                            option  المرسل    
+                            option   المرسل اليه 
+                .col
+                    .form-group
+                        label(for='inputName')  الخصم  
+                        input#inputName.form-control(type='text')
+                .col
+                    .form-group
+                        label(for='inputName')  ارجاع البوليصة  
+                        input#inputName.form-control(type='text')
+                .col
+                    .form-group
+                        label(for='inputName')  مدة التسليم  
+                        input#inputName.form-control(type='text')
+            .row
+                .col
+                    .form-group
+                        label(for='inputName')    العملة      
+                        select.form-control
+                            option  ريال سعودي    
+                            option   دينار اردني 
+            .row
+                .col
+                    .form-group
+                        label(for='inputName')  موقع دفع العطل    
+                        input#inputName.form-control(type='text')
+                .col
+                    .form-group
+                        label(for='inputName')  وصول جمرك   
+                        select.form-control
+                            option  الحديثة     
+                            option   العمري  
+                .col
+                    .form-group
+                        label(for='inputName')  قيمة بدل عطل   
+                        input#inputName.form-control(type='text')
+                .col
+                    .form-group
+                        label(for='inputName')  مدة العطل المسموح بها  
+                        input#inputName.form-control(type='text')
+            .dropdown-divider(offset="2")
+            h2  معلومات السائقون   
+            .dropdown-divider(offset="2")
+            include ../../assets/layout/Model/driver.pug
+
+            h2 الملاحظات
+            .dropdown-divider(offset="2")
+            include ../../assets/layout/Model/notes.pug
+
+            .row 
+                .col
+                    button.btn.btn-primary(
+                        type="button" data-bs-toggle="modal" data-bs-target="#driverModal"
+                    ) اضافة
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

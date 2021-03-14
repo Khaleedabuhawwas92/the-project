@@ -1,0 +1,52 @@
+#exampleModal.modal.fade(
+    tabindex="-1",
+    role="dialog",
+    aria-labelledby="exampleModalLabel",
+    aria-hidden="true"
+)
+    .modal-dialog.modal-lg(role="document")
+        .modal-content
+            .modal-header
+                h5#exampleModalLabel.modal-title.text-center.font-weight-bold.lead شاشة الادخال 
+            .modal-body
+                form.row.g-4
+                    .col-md-6
+                        label.form-label.font-weight-bold(for='inputPassword4') اسم الزبون
+                        input#text.form-control(type='text')
+                    .col-md-6
+                        label.form-label.datepicker.font-weight-bold(for='inputdate4'  ) التاريخ
+                        input.form-control(type='date' readonly )
+                    .col-6
+                        label.form-label.font-weight-bold(for='inputAddress') نوع البضاعة
+                        input.form-control(type='text' placeholder='1234 Main St')
+                    .col-6
+                        label.form-label.font-weight-bold(for='inputAddress2')  وزن البضاعة
+                        input.form-control(type='text' placeholder='Apartment, studio, or floor')
+                    .col-md-6
+                        label.form-label.font-weight-bold(for='inputCity') مكان التحميل
+                        input.form-control(type='text')
+                    .col-md-6
+                        label.form-label.font-weight-bold(for='inputZip') البضاعة الى
+                        input.form-control(type='text')
+                    .col-md-12
+                        label.form-label.font-weight-bold(for='inputZip')  الملاحظات
+                        textarea.form-control(name="" cols="30" rows="2")
+            .modal-header
+                h5#exampleModalLabel.modal-title.font-weight-bold.lead  معلومات السائقون 
+            .modal-body
+                form#driver-info.row.g-4
+                    .col-md-6
+                        label.form-label.font-weight-bold(for='inputPassword4') اسم السائق
+                        input#inputPassword45.form-control(type='password')
+                    .col-md-3
+                        label.form-label.datepicker.font-weight-bold(for='inputdate4' ) رقم السيارة
+                        input.form-control(type='text' )
+                    .col-3
+                        label.form-label.font-weight-bold(for='inputAddress') اللوحة 
+                        input.form-control(type='text' )
+            .modal-footer
+                button.btn.btn-danger(
+                    type="button",
+                    data-dismiss="modal"
+                ) اغلاق
+                button.btn.btn-success(type="button") حفظ 
